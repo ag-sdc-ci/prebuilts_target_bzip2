@@ -1,0 +1,63 @@
+// Auto-generated prebuilt Blueprint for external/bzip2
+// Extracted from Extractive APEX package: org.blisslabs.ag.ext.bzip2
+
+package {
+    default_applicable_licenses: ["external_bzip2_license"],
+}
+
+license {
+    name: "external_bzip2_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-BSD-3-Clause",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+cc_library_headers {
+    name: "libbz_headers",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    host_supported: true,
+    apex_available: [
+        "//apex_available:anyapex",
+        "//apex_available:platform",
+    ],
+    export_include_dirs: ["include"],
+}
+
+cc_prebuilt_library {
+    name: "libbz",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    host_supported: true,
+    check_elf_files: false,
+    export_include_dirs: ["include"],
+    static: {
+        srcs: ["lib/libbz2.a"],
+    },
+    shared: {
+        srcs: ["lib/libbz2.so"],
+    },
+    prefer: true,
+    apex_available: [
+        "//apex_available:anyapex",
+        "//apex_available:platform",
+    ],
+    min_sdk_version: "29",
+}
+
+cc_prebuilt_binary {
+    name: "bzip2",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    host_supported: true,
+    check_elf_files: false,
+    srcs: ["bin/bzip2"],
+    prefer: true,
+}

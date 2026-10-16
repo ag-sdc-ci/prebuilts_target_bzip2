@@ -1,0 +1,6 @@
+shadow prebuilt repo: bzip2 (target)
+  upstream: external/bzip2
+  api-level: 34 (branch 34-20261016)
+  blobs: org.blisslabs.ag.ext.bzip2.apex
+  dev-src: extracted extractive payload (libbz2.so, libbz2.a, bzlib.h headers, bzip2 binary) + root Android.bp
+  date: 2026-10-16

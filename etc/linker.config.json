@@ -1,0 +1,28 @@
+{
+	"provideLibs": [	
+		    "libbz-x86_64-v2.so",
+		    "libbz.so",
+		    "libbz2-x86_64-v2.so",
+		    "libbz2.so",
+		    "libdummy_binary_bunzip2-x86_64-v2.so",
+		    "libdummy_binary_bunzip2.so",
+		    "libdummy_binary_bzcat-x86_64-v2.so",
+		    "libdummy_binary_bzcat.so",
+		    "libdummy_binary_bzip2-x86_64-v2.so",
+		    "libdummy_binary_bzip2.so",
+		    "libdummy_binary_bzip2recover-x86_64-v2.so",
+		    "libdummy_binary_bzip2recover.so",
+		    "libdummy_binary_libbz2.a-x86_64-v2.so",
+		    "libdummy_binary_libbz2.a.so",
+		    "libdummy_ext_bzip2-x86_64-v2.so",
+		    "libdummy_ext_bzip2.so",
+		    "libdummy_headers_ext_bzip2-x86_64-v2.so",
+		    "libdummy_headers_ext_bzip2.so",
+		    "libdummy_pkgconfig_ext_bzip2-x86_64-v2.so",
+		    "libdummy_pkgconfig_ext_bzip2.so"
+	],
+	"requireLibs": [	
+		    "libc.so"
+	],
+	"visible": true
+}
